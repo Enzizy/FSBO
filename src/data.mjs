@@ -1,0 +1,258 @@
+// Content model for the FSBO4u redesign.
+// Copy is carried over from the live site (fsbo4u.com, crawled 2026-11-17).
+// Listing descriptions are sample copy: the live listing detail pages return HTTP 500.
+
+export const site = {
+  name: 'FSBO4u',
+  url: 'https://fsbo4u.com',
+  tagline: 'Sell your home. Save money. It’s that easy.',
+  email: 'info@FSBO4u.com',
+  phone: '+63917-546-7098',
+  phoneHref: '+639175467098',
+  office: 'Ground Floor Geson Bldg, Jakosalem St, Ramos, Cebu City, Philippines',
+  hours: 'Mon–Fri, 9 AM – 6 PM PHT',
+  partner: 'Land Asia Global Properties Network',
+};
+
+export const stats = [
+  { value: 10000, suffix: '+', label: 'Active listings' },
+  { value: 50, suffix: '+', label: 'Cities covered' },
+  { value: 0, text: 'Free', label: 'For sellers, always' },
+  { value: 500, suffix: '+', label: 'Trusted agents' },
+];
+
+export const listings = [
+  {
+    slug: 'modern-2br-unit-bgc-taguig',
+    title: 'Modern 2BR Unit at BGC',
+    type: 'Condominium',
+    price: 8500000,
+    location: 'Bonifacio Global City, Taguig',
+    city: 'Taguig',
+    region: 'metro-manila',
+    beds: 2, baths: 2, area: 65,
+    img: 'listing-bgc.jpg',
+    seller: 'owner',
+    status: 'For Sale',
+    year: 2019,
+    parking: 1,
+    features: ['Fully furnished', 'Balcony with city view', '24/7 security', 'Infinity pool', 'Fitness centre', 'Walk to High Street'],
+    description: 'A bright, airy two-bedroom corner unit in the heart of Bonifacio Global City. Floor-to-ceiling windows, warm rattan accents and a private balcony make this a calm retreat minutes from offices, schools and High Street dining. Sold directly by the owner — clean title, ready for turnover.',
+  },
+  {
+    slug: 'spacious-family-home-alabang',
+    title: 'Spacious Family Home in Alabang',
+    type: 'House & Lot',
+    price: 12000000,
+    location: 'Alabang, Muntinlupa',
+    city: 'Muntinlupa',
+    region: 'metro-manila',
+    beds: 4, baths: 3, area: 220,
+    art: 'house',
+    seller: 'owner',
+    status: 'For Sale',
+    year: 2012,
+    parking: 2,
+    features: ['Gated subdivision', 'Garden & lanai', 'Maid’s quarters', '2-car garage', 'Near Festival Mall', 'Flood-free area'],
+    description: 'A generous four-bedroom family home inside a quiet, gated Alabang village. Open-plan living and dining spill onto a shaded lanai and garden, with a two-car garage and helper’s quarters. Minutes from SLEX, international schools and Alabang Town Center.',
+  },
+  {
+    slug: 'beachfront-villa-mactan-cebu',
+    title: 'Beachfront Villa in Mactan, Cebu',
+    type: 'Beach Property',
+    price: 25000000,
+    location: 'Mactan, Cebu',
+    city: 'Cebu',
+    region: 'cebu',
+    beds: 3, baths: 3, area: 180,
+    img: 'listing-mactan.jpg',
+    seller: 'owner',
+    status: 'For Sale',
+    year: 2016,
+    parking: 2,
+    features: ['Direct beach access', 'Private pool', 'Sea-view terrace', 'Boat mooring nearby', '20 min to MCIA', 'Titled property'],
+    description: 'Wake up to the Camotes Sea. This three-bedroom villa sits on Mactan’s quiet eastern shoreline with direct beach access, a private pool and a wraparound terrace built for sunsets. An ideal home, retirement retreat or resort-style investment — 20 minutes from Mactan-Cebu International Airport.',
+  },
+  {
+    slug: 'studio-unit-makati-cbd',
+    title: 'Studio Unit in Makati CBD',
+    type: 'Condominium',
+    price: 4200000,
+    location: 'Makati CBD, Makati',
+    city: 'Makati',
+    region: 'metro-manila',
+    beds: 0, baths: 1, area: 28,
+    img: 'hero-manila.jpg',
+    seller: 'owner',
+    status: 'For Sale',
+    year: 2018,
+    parking: 0,
+    features: ['Walk to Ayala Ave', 'Rental-ready', 'Pool & gym', 'High floor', 'Concierge', 'Pet-friendly'],
+    description: 'A smart, efficient studio steps from Ayala Avenue — perfect as a first home, city crash pad or rental investment. High-floor views, building amenities and strong rental demand from Makati’s professional workforce.',
+  },
+  {
+    slug: '3br-townhouse-quezon-city',
+    title: '3BR Townhouse in Quezon City',
+    type: 'Townhouse',
+    price: 7800000,
+    location: 'Quezon City, Metro Manila',
+    city: 'Quezon City',
+    region: 'metro-manila',
+    beds: 3, baths: 2, area: 120,
+    art: 'townhouse',
+    seller: 'agent',
+    status: 'For Sale',
+    year: 2021,
+    parking: 1,
+    features: ['Three storeys', 'Roof deck', 'Gated community', 'Near UP Diliman', '1 parking slot', 'Brand-new fixtures'],
+    description: 'A modern three-storey townhouse in a secure, gated enclave. Three bedrooms, a roof deck and contemporary finishes throughout — close to universities, hospitals and the Katipunan corridor. Listed by a PRC-verified agent.',
+  },
+  {
+    slug: 'residential-lot-davao-city',
+    title: 'Residential Lot in Davao City',
+    type: 'Lot Only',
+    price: 3500000,
+    location: 'Buhangin, Davao City',
+    city: 'Davao City',
+    region: 'davao',
+    beds: 0, baths: 0, area: 500,
+    art: 'lot',
+    seller: 'owner',
+    status: 'For Sale',
+    year: null,
+    parking: null,
+    features: ['Clean title', 'Corner lot', 'Concrete road access', 'Near Buhangin highway', 'Water & power available', 'Flat terrain'],
+    description: 'A flat, 500 sqm corner lot in a growing residential pocket of Buhangin. Concrete road access, utilities at the boundary and a clean title — ready for your dream home or a long-term land bank in one of Mindanao’s fastest-growing cities.',
+  },
+];
+
+export const propertyTypes = ['Condominium', 'House & Lot', 'Townhouse', 'Beach Property', 'Lot Only', 'Commercial', 'Warehouse'];
+
+export const cities = {
+  'cebu-city': {
+    name: 'Cebu City',
+    title: 'Cebu City Real Estate',
+    subtitle: 'For Sale By Owner properties in Cebu City, Philippines',
+    intro: 'Find houses, condominiums, lots, and commercial properties for sale directly from owners in Cebu City. Skip the agent, save on commissions, and deal directly with sellers.',
+    region: 'cebu',
+    img: 'listing-mactan.jpg',
+    types: [
+      ['Condominiums', 'High-rise and mid-rise condo units in Cebu City', 'building'],
+      ['House & Lot', 'Residential houses with lot in Cebu City subdivisions', 'home'],
+      ['Lot Only', 'Vacant lots and land for sale in Cebu City', 'lot'],
+      ['Townhouses', 'Townhouse units in gated communities', 'townhouse'],
+    ],
+    areasTitle: 'Popular neighborhoods',
+    areasIntro: 'Search properties by neighborhood to find the right location for your lifestyle.',
+    areas: ['Lahug', 'Banilad', 'Talamban', 'Mabolo', 'Guadalupe', 'IT Park', 'Cebu Business Park', 'Mandaue', 'Mactan', 'Talisay'],
+    market: [
+      ['Avg. condo price', '₱4.5M–₱8M', 'IT Park / CBD area'],
+      ['Avg. house & lot', '₱5M–₱15M', 'Banilad / Talamban'],
+      ['Avg. lot price / sqm', '₱15,000–₱45,000', 'Prime locations'],
+    ],
+    overview: 'Cebu City is the Philippines’ second-largest urban center and a major hub for business, tourism, and real estate investment. The city’s property market is driven by strong demand from BPO employees, OFW families, and retirees. Key growth corridors include the IT Park, Cebu Business Park, and the South Road Properties (SRP).',
+    faq: [
+      ['How much does it cost to buy property in Cebu City?', 'Cebu City property prices vary widely. Condominiums typically range from ₱2M–₱15M, house and lots from ₱3M–₱30M+, and lots from ₱1M–₱10M depending on location. IT Park and Cebu Business Park command premium prices.'],
+      ['Can foreigners buy property in Cebu City?', 'Foreign nationals can own condominium units (up to 40% of a building) but cannot own land in the Philippines. Foreigners may lease land for up to 50 years (renewable for 25 more). Consult a Philippine real estate lawyer for guidance.'],
+      ['What are the best areas to buy property in Cebu City?', 'Top areas include IT Park and Cebu Business Park for condos, Banilad and Talamban for house and lots, and Lahug for a mix of residential and commercial. Mactan Island is popular for beachfront and resort-style properties.'],
+      ['What taxes and fees apply when buying property in Cebu City?', 'Buyers typically pay documentary stamp tax (1.5%), transfer tax (0.5–0.75%), registration fees, and notarial fees. Total transaction costs are usually 3–5% of the property price. Sellers pay capital gains tax (6%) or creditable withholding tax.'],
+    ],
+  },
+  'metro-manila': {
+    name: 'Metro Manila',
+    title: 'Metro Manila Real Estate',
+    subtitle: 'For Sale By Owner properties across the National Capital Region',
+    intro: 'Discover houses, condominiums, lots, and commercial properties for sale directly from owners in BGC, Makati, Quezon City, Pasig, and all 16 cities of Metro Manila.',
+    region: 'metro-manila',
+    img: 'hero-manila.jpg',
+    types: [
+      ['Condominiums', 'BGC, Makati, Ortigas, and Quezon City condo units', 'building'],
+      ['House & Lot', 'Residential houses in Metro Manila subdivisions', 'home'],
+      ['Lot Only', 'Vacant lots and land for sale in Metro Manila', 'lot'],
+      ['Townhouses', 'Townhouse units in gated communities', 'townhouse'],
+    ],
+    areasTitle: 'Browse by city',
+    areasIntro: 'All 16 cities and 1 municipality of the National Capital Region.',
+    areas: ['BGC (Taguig)', 'Makati', 'Quezon City', 'Pasig', 'Mandaluyong', 'Parañaque', 'Las Piñas', 'Muntinlupa', 'Marikina', 'Pasay', 'San Juan', 'Caloocan', 'Valenzuela', 'Malabon', 'Navotas'],
+    market: [
+      ['Avg. BGC condo price', '₱12M–₱30M', 'Bonifacio Global City'],
+      ['Avg. QC house & lot', '₱6M–₱18M', 'Quezon City subdivisions'],
+      ['Avg. lot price / sqm', '₱30,000–₱200,000', 'BGC / Makati CBD'],
+    ],
+    overview: 'Metro Manila is the Philippines’ primary real estate market, driven by strong demand from OFWs, BPO workers, and investors. BGC and Makati remain the most sought-after locations for condominiums and commercial properties, while Quezon City and Parañaque offer more affordable residential options with good infrastructure.',
+    faq: [
+      ['What are the most expensive areas in Metro Manila for real estate?', 'Bonifacio Global City (BGC) in Taguig and Makati CBD command the highest prices, with condominiums ranging from ₱8M to ₱50M+. Rockwell Center in Makati and Ortigas Center in Pasig are also premium locations.'],
+      ['How much does a house and lot cost in Metro Manila?', 'House and lot prices in Metro Manila vary by city. In Quezon City and Parañaque, expect ₱5M–₱20M for mid-range properties. In BGC and Makati, townhouses and houses can exceed ₱30M–₱100M+.'],
+      ['What is the process for buying property in Metro Manila?', 'The process involves: (1) finding a property, (2) signing a Reservation Agreement, (3) due diligence and title verification, (4) executing a Deed of Absolute Sale, (5) paying taxes and fees, and (6) transferring the title at the Registry of Deeds.'],
+      ['Are there affordable properties in Metro Manila?', 'Yes — cities like Caloocan, Valenzuela, Malabon, and Navotas offer more affordable options. Condominiums in Quezon City and Pasig can also be found in the ₱2M–₱5M range. FSBO4u listings often offer below-market prices since there are no agent commissions.'],
+    ],
+  },
+  'davao-city': {
+    name: 'Davao City',
+    title: 'Davao City Real Estate',
+    subtitle: 'For Sale By Owner properties in Mindanao’s largest city',
+    intro: 'Find houses, condominiums, farm lots, and commercial properties for sale directly from owners in Davao City. One of the Philippines’ safest and fastest-growing cities.',
+    region: 'davao',
+    img: 'art-davao.svg',
+    types: [
+      ['House & Lot', 'Residential houses in Davao City subdivisions', 'home'],
+      ['Condominiums', 'Condo units in Davao City’s growing CBD', 'building'],
+      ['Farm Lots', 'Agricultural and farm lots in Davao region', 'lot'],
+      ['Townhouses', 'Townhouse units in gated communities', 'townhouse'],
+    ],
+    areasTitle: 'Popular districts',
+    areasIntro: 'Davao City is divided into 11 districts. Browse properties by area.',
+    areas: ['Matina', 'Buhangin', 'Toril', 'Calinan', 'Baguio District', 'Agdao', 'Talomo', 'Tibungco', 'Panacan', 'Bunawan'],
+    market: [
+      ['Avg. house & lot', '₱2.5M–₱8M', 'Subdivision properties'],
+      ['Avg. condo price', '₱2M–₱6M', 'CBD and Matina area'],
+      ['Avg. farm lot / ha', '₱500K–₱3M', 'Calinan / Toril area'],
+    ],
+    overview: 'Davao City is Mindanao’s economic capital and one of the Philippines’ most livable cities. Its real estate market is growing steadily, driven by infrastructure development, a strong agricultural economy, and increasing interest from OFW families and retirees seeking a safe, affordable alternative to Metro Manila and Cebu.',
+    faq: [
+      ['Is Davao City a good place to invest in real estate?', 'Yes — Davao City is one of the Philippines’ fastest-growing real estate markets. It offers lower property prices compared to Metro Manila and Cebu, strong economic growth, and a reputation as one of the safest cities in Southeast Asia. It’s popular with retirees, OFW families, and investors.'],
+      ['How much does property cost in Davao City?', 'Davao City offers relatively affordable property prices. House and lots in subdivisions range from ₱2M–₱10M, condominiums from ₱2M–₱8M, and farm lots from ₱500K–₱5M depending on size and location. Prices are rising as the city develops.'],
+      ['What are the best areas to buy property in Davao City?', 'Matina and Buhangin are popular for residential properties. The Davao City CBD area is growing for condominiums. Calinan and Toril offer more affordable options with larger lots. Coastal areas near Samal Island are popular for resort-style properties.'],
+      ['Can I buy agricultural land in Davao City?', 'Yes, agricultural and farm lots are available in Davao City and surrounding areas. However, there are restrictions on foreign ownership of agricultural land. Filipino citizens and corporations with at least 60% Filipino ownership can purchase agricultural land subject to size limits.'],
+    ],
+  },
+};
+
+export const plans = [
+  {
+    id: 'starter', name: 'Starter', monthly: 499, blurb: 'Perfect for individual agents just getting started with FSBO listings.',
+    cta: 'Start free trial',
+    features: ['Up to 5 active listings', 'Basic listing page', 'Contact form on listings', 'Photo uploads (up to 8/listing)', 'Email inquiry notifications', 'FSBO4u agent badge'],
+    excluded: ['Featured listing placement', 'Priority search ranking', 'Analytics dashboard', 'Dedicated account manager', 'Social media promotion', 'Verified broker seal'],
+  },
+  {
+    id: 'pro', name: 'Professional', monthly: 1299, badge: 'Most popular', blurb: 'For active agents and brokers who want maximum visibility and leads.',
+    cta: 'Get Professional',
+    features: ['Up to 25 active listings', 'Premium listing page', 'Contact form on listings', 'Photo uploads (up to 20/listing)', 'Email & SMS inquiry notifications', 'FSBO4u verified agent badge', 'Featured listing placement', 'Priority search ranking', 'Analytics dashboard'],
+    excluded: ['Dedicated account manager', 'Social media promotion', 'Verified broker seal'],
+  },
+  {
+    id: 'elite', name: 'Broker Elite', monthly: 2999, badge: 'Best value', blurb: 'Full-suite solution for brokerages managing multiple agents and listings.',
+    cta: 'Go Broker Elite',
+    features: ['Unlimited active listings', 'Premium + video listing page', 'Contact form on listings', 'Unlimited photo uploads', 'Email, SMS & push notifications', 'FSBO4u verified broker badge', 'Featured listing placement', 'Top search ranking', 'Advanced analytics + reports', 'Dedicated account manager', 'Social media promotion', 'Verified broker seal'],
+    excluded: [],
+  },
+];
+
+export const planFaq = [
+  ['Can I switch plans at any time?', 'Yes. Upgrade or downgrade whenever you like — changes take effect on your next billing cycle, and upgrades unlock features immediately.'],
+  ['Is there a free trial?', 'The Starter plan includes a free trial with no credit card required, so you can test FSBO4u with real listings before you commit.'],
+  ['What payment methods are accepted?', 'GCash, Maya and local debit/credit cards for Philippine accounts, plus Visa and Mastercard for international cards.'],
+  ['Do I need a PRC license to sign up?', 'A PRC license is required for the Professional and Broker Elite plans. It is verified once and displayed as a badge on your listings.'],
+  ['What happens to my listings if I cancel?', 'Your listings stay visible until the end of your billing period, then return to draft. Nothing is deleted — reactivate any time.'],
+  ['Can I list properties as an FSBO owner on these plans?', 'Homeowners don’t need a plan at all — listing your own property on FSBO4u is free. These plans are designed for licensed agents and brokers.'],
+];
+
+export const team = [
+  { initials: 'MR', name: 'Marco Reyes', role: 'Co-Founder & CEO', bio: 'Former real estate broker with 15 years in Metro Manila residential and commercial markets.' },
+  { initials: 'AS', name: 'Ana Santos', role: 'Co-Founder & CTO', bio: 'Software engineer and proptech veteran who previously built listing platforms for Southeast Asia.' },
+  { initials: 'JC', name: 'Javier Cruz', role: 'Head of Growth', bio: 'Digital marketing specialist focused on connecting buyers and sellers across the Philippine archipelago.' },
+];
+
+export const peso = (n) => '₱' + n.toLocaleString('en-PH');
+export const pesoShort = (n) => n >= 1e6 ? '₱' + (n / 1e6).toFixed(n % 1e6 ? 1 : 0) + 'M' : '₱' + Math.round(n / 1e3) + 'K';

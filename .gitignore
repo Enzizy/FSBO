@@ -1,0 +1,9 @@
+# Build output (regenerate with: npm run build)
+dist/
+
+# Local tooling / OS
+node_modules/
+.claude/
+*.log
+.DS_Store
+Thumbs.db

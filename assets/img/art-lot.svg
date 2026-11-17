@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#20203C"/><stop offset="1" stop-color="#12122A"/></linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E9CF85"/><stop offset="1" stop-color="#B08D3A"/></linearGradient>
+  </defs>
+  <rect width="800" height="560" fill="url(#bg)"/>
+  <g fill="none" stroke="#C9A84C" stroke-width="1.2" opacity=".18">
+    <path d="M-20 120c160-40 300 30 440 0s260-60 400-20"/><path d="M-20 170c160-40 300 30 440 0s260-60 400-20"/>
+    <path d="M-20 400c180-30 320 40 460 10s240-50 380-10"/><path d="M-20 450c180-30 320 40 460 10s240-50 380-10"/>
+    <path d="M-20 500c180-30 320 40 460 10s240-50 380-10"/>
+  </g>
+  <g fill="none" stroke="url(#g)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M250 210l300-20 40 200-330 20z"/>
+    <path d="M250 210l10 200" stroke-dasharray="2 10" opacity=".6"/>
+    <circle cx="250" cy="210" r="7"/><circle cx="550" cy="190" r="7"/><circle cx="590" cy="390" r="7"/><circle cx="260" cy="410" r="7"/>
+  </g>
+  <g fill="#E3C878" font-family="Inter, Arial, sans-serif" font-size="18" letter-spacing="3" opacity=".85">
+    <text x="360" y="182">25.0 M</text><text x="604" y="296" transform="rotate(79 604 296)">20.0 M</text>
+  </g>
+  <g fill="#C9A84C" font-family="Georgia, serif" font-size="44" text-anchor="middle"><text x="415" y="318">500 sqm</text></g>
+  <g stroke="#C9A84C" stroke-width="2" fill="none" opacity=".7"><path d="M680 120v40M680 120l-10 16M680 120l10 16"/></g>
+  <text x="680" y="185" fill="#C9A84C" font-family="Inter, Arial, sans-serif" font-size="16" text-anchor="middle" opacity=".7">N</text>
+</svg>
