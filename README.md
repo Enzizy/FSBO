@@ -10,6 +10,34 @@ npm run dev        # builds to ./dist and serves http://localhost:4173
 
 There are no dependencies to install: you only need Node 18+. Run `npm run build` to regenerate `dist/` after editing anything in `src/` or `assets/`.
 
+## Deploy to Vercel
+
+The repo is ready to deploy as-is, because `vercel.json` already sets everything up.
+
+1. In Vercel, go to **Add New → Project**, then import `Enzizy/FSBO`.
+2. Leave the defaults. Vercel reads these from `vercel.json`:
+   - Framework: Other (static)
+   - Build command: `npm run build`
+   - Output directory: `dist`
+   - Node version: 20, from `.nvmrc` (any version 18 or newer works)
+3. Click **Deploy**. Every push to `main` redeploys automatically.
+
+What the config handles:
+- **Clean URLs with trailing slashes.** For example, `/listings` redirects to `/listings/`, and `/v2/...` and `/v3/...` work the same way.
+- **Custom 404 page.**
+- **Security headers:** `nosniff`, `SAMEORIGIN` framing, a referrer policy and a permissions policy.
+- **Caching.** Every CSS/JS URL gets a content hash (`?v=…`) at build time, so a new deploy never serves stale styles or scripts. Images are cached for a week.
+- **Kept out of search engines by default.** This is a proposal, so `robots.txt` blocks all crawlers and the client's live site isn't competing with a `*.vercel.app` copy. When this becomes the real fsbo4u.com, add the environment variable **`ALLOW_INDEXING=true`** in Vercel (Project → Settings → Environment Variables) and redeploy. That restores the normal `robots.txt` and sitemap.
+- **Dashboards never indexed.** Seller and admin pages also send `X-Robots-Tag: noindex`, whatever the setting above.
+
+To deploy from the command line instead:
+
+```bash
+npx vercel --prod
+```
+
+`.vercelignore` keeps `dist/` and local files from being uploaded, because Vercel builds `dist/` itself.
+
 ## Three design versions
 
 Every page exists in three versions, built from the same content. Use the **Design** switcher in the bottom-left corner of any page to swap versions without leaving that page.

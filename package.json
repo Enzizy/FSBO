@@ -7,6 +7,10 @@
   "scripts": {
     "build": "node build.mjs",
     "serve": "node serve.mjs 4173",
-    "dev": "node build.mjs && node serve.mjs 4173"
+    "dev": "node build.mjs && node serve.mjs 4173",
+    "start": "node serve.mjs 4173"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }

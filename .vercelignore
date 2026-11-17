@@ -1,0 +1,5 @@
+# Files not uploaded when deploying with the Vercel CLI (Vercel builds dist/ itself)
+dist/
+node_modules/
+.claude/
+*.log
